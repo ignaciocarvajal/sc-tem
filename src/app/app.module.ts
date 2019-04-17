@@ -7,6 +7,9 @@ import { AppComponent } from './app.component';
 // libs
 import { ScCommonvfModule } from '@sc/commonvf';
 
+// primer ng
+import {DropdownModule} from 'primeng/dropdown';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -14,7 +17,8 @@ import { ScCommonvfModule } from '@sc/commonvf';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ScCommonvfModule
+    ScCommonvfModule,
+    DropdownModule
   ],
   providers: [],
   bootstrap: [AppComponent]
