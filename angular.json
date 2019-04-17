@@ -130,6 +130,46 @@
           }
         }
       }
+    },
+    "sc-commonvf": {
+      "root": "projects/sc-commonvf",
+      "sourceRoot": "projects/sc-commonvf/src",
+      "projectType": "library",
+      "prefix": "sc-commonvf",
+      "schematics": {
+        "@schematics/angular:component": {
+          "styleext": "css"
+        }
+      },
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/sc-commonvf/tsconfig.lib.json",
+            "project": "projects/sc-commonvf/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/sc-commonvf/src/test.ts",
+            "tsConfig": "projects/sc-commonvf/tsconfig.spec.json",
+            "karmaConfig": "projects/sc-commonvf/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/sc-commonvf/tsconfig.lib.json",
+              "projects/sc-commonvf/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "sc-tem"

@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "sc-commonvf": [
+        "dist/sc-commonvf"
+      ],
+      "sc-commonvf/*": [
+        "dist/sc-commonvf/*"
+      ]
+    }
   }
 }
