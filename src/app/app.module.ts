@@ -5,13 +5,6 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-
-// libs
-import { ScCommonvfModule } from '@sc/commonvf';
-
-// primer ng
-import {DropdownModule} from 'primeng/dropdown';
-
 @NgModule({
   declarations: [
     AppComponent
@@ -21,8 +14,6 @@ import {DropdownModule} from 'primeng/dropdown';
     FormsModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    ScCommonvfModule,
-    DropdownModule
   ],
   providers: [],
   bootstrap: [AppComponent]
