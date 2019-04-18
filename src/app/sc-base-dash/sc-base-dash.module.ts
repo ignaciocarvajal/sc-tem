@@ -13,6 +13,7 @@ import { ScCommonvfModule } from '@sc/commonvf';
     CommonModule,
     ScBaseDashRoutingModule,
     ScCommonvfModule
+
   ]
 })
 export class ScBaseDashModule { }
